@@ -1,6 +1,7 @@
 
 var boatImg, sharkIMG;
 let sharky;
+let shark_alive = true
 
 function preload() {
   boatImg = loadAnimation('sprites/manboat-1.png', 'sprites/manboat-3.png');
@@ -13,14 +14,18 @@ function preload() {
   }
 
   function draw() {
-    background(200, 255, 255);
-    sharky.drawShark();
+    background(200, 0, 0);
+    if (shark_alive == true){
+      sharky.drawShark();
+    }
     sharky.moveShark();
 
 
     //specify the animation instance and its x,y position
     //animation() will update the animation frame as well
     animation(boatImg, 350, 250);
+
+
 
 
   }
