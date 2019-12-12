@@ -21,7 +21,7 @@ function preload() {
     sharky.moveShark();
 
 
-    //specify the animation instance and its x,y position
+    //specify the animation instance and inspects x,y position
     //animation() will update the animation frame as well
     animation(boatImg, 350, 250);
 
@@ -34,7 +34,7 @@ function preload() {
   class Shark {
     constructor(x,y){
 		this.x = x;
-    		this.y = y;
+    this.y = y;
 
 	  }
     drawShark(){
